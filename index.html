@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mike Johnson Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="popup" id="popup">
+      <p>Tugma bosildi</p>
+    </div>
+    <nav id="home">
+      <div class="logo">
+        <h1 class="MK">SHERBEK<span class="sp">YO'LDASHEV</span></h1>
+      </div>
+      <div class="linksa">
+        <a href="#orta">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#recommendations">Recommendations</a>
+      </div>
+    </nav>
+    <div class="orta" id="orta">
+      <img
+        src="./html_finalprojimages/95228f9b-b807-429a-b57c-8c5e7be3325d_medium.webp"
+        alt="Mike Johnson"
+      />
+
+      <h2 class="ism">Sherbek Yo'ldashev</h2>
+
+      <p class="tavsif">
+        "As a dedicated Fullstack Developer, I focus on creating robust and
+        scalable web solutions. I have a solid understanding of client-side
+        technologies and server-side logic."
+      </p>
+
+      <button
+        class="btn-contact"
+        id="btn-contact"
+        onclick="meningFunksiyam('Tugma bosildi!')"
+      >
+        Contact Me
+      </button>
+    </div>
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <img
+            src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png"
+            alt="HTML logo"
+          />
+          <p>HTML</p>
+        </div>
+
+        <div class="skill-card">
+          <img
+            src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png"
+            alt="CSS logo"
+          />
+          <p>CSS</p>
+        </div>
+        <div class="skill-card">
+          <img
+            src="https://cdn.worldvectorlogo.com/logos/react-2.svg"
+            alt="React logo"
+          />
+          <p>React</p>
+        </div>
+
+        <div class="skill-card">
+          <img
+            src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg"
+            alt="NodeJS logo"
+          />
+          <p>Node.js</p>
+        </div>
+        <div class="skill-card">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png"
+            alt="JS logo"
+          />
+          <p>JavaScript</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-container">
+      <h2 class="section-title">My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img
+            src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=300"
+            alt="Do'kon"
+            style="width: 100%; border-radius: 5px"
+          />
+          <h3>Onlayn Do'kon</h3>
+          <p>
+            Internet orqali mahsulot sotib olish uchun oddiy va tushunarli
+            veb-sayt.
+          </p>
+        </div>
+        <div class="project-card">
+          <img
+            src="https://images.unsplash.com/photo-1592210454359-9043f067919b?w=300"
+            alt="Ob-havo"
+            style="width: 100%; border-radius: 5px"
+          />
+          <h3>Ob-havo Dasturi</h3>
+          <p>
+            Shaharlardagi ob-havo ma'lumotlarini ko'rsatib beruvchi foydali
+            ilova.
+          </p>
+        </div>
+        <div class="project-card">
+          <img
+            src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=300"
+            alt="Reja"
+            style="width: 100%; border-radius: 5px"
+          />
+          <h3>Vazifalar Ro'yxati</h3>
+          <p>
+            Kunlik ishlarimizni tartibga solish va rejalashtirish uchun
+            yordamchi dastur.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div id="recommendations" class="royxat">
+        <h2 class="section-title">Recommendations</h2>
+      <div class="royxatcard" id="roykat">
+        <div class="quti">
+          <p>
+            Sherbek is a very talented developer. He completes tasks on time and
+            writes very clean code. Highly recommend!
+          </p>
+        </div>
+        <div class="quti">
+          <p>
+            Working with Sherbek was a great experience. He is a very
+            responsible and creative person.
+          </p>
+        </div>
+        <div class="quti">
+          <p>
+            "Sherbek has a great eye for detail and exceptional problem-solving
+            skills. An asset to any team!"
+          </p>
+        </div>
+      </div>
+      <div class="addrecomendations">
+        <textarea
+          id="textareaa"
+          placeholder="Write your recommendation here..."
+        ></textarea>
+        <button class="subbtn" onclick="addRecommendation()">Submit</button>
+      </div>
+    </div>
+
+    <div class="home-icon" id="scrollly" onclick="tepagaChiq()">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/25/25694.png"
+        alt="Home"
+        width="30"
+      />
+    </div>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>
